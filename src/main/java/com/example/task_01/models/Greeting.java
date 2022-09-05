@@ -5,9 +5,9 @@ public class Greeting {
     private String name;
     private String timeOfDay;
 
-    public Greeting(String name, String timeOfDay) {
+    public Greeting(String name) {
         this.name = name;
-        this.timeOfDay = timeOfDay;
+        this.timeOfDay = null;
     }
 
     public Greeting() {
