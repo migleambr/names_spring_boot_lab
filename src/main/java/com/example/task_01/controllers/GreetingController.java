@@ -14,10 +14,9 @@ public class GreetingController {
         return "Good  " + timeOfDay + " " + greeting.getName() + "!";
     }
 
-    @PostMapping (value = "/greeting/christmas")
-    public String christmas() {
-        Celebration celebration = new Celebration("Merry Christmas!");
-        return celebration.getMessage();
+    @GetMapping (value = "/christmas")
+    public Celebration christmas() {
+        return new Celebration("Merry Christmas");
     }
 
 }
