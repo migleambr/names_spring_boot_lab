@@ -16,7 +16,7 @@ public class GreetingController {
 
     @PostMapping (value = "/greeting/christmas")
     public String christmas() {
-        Celebration celebration = new Celebration();
+        Celebration celebration = new Celebration("Merry Christmas!");
         return celebration.getMessage();
     }
 
